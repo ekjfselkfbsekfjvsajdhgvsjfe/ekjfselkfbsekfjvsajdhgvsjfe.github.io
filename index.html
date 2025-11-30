@@ -569,6 +569,40 @@
             0% { top: 8px; opacity: 1; }
             100% { top: 24px; opacity: 0; }
         }
+        .usercount-container {
+  display: inline-block;
+  background: linear-gradient(120deg, #222428 85%, #2e3034 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(18,20,26,0.13);
+  padding: 8px 24px;
+  font-family: 'TT Interphases Pro', -apple-system, sans-serif;
+  font-size: 1.35em;
+  font-weight: 600;
+  color: #efefef;
+  letter-spacing: 0.08em;
+  margin: 0 10px;
+  transition: 
+    box-shadow .27s cubic-bezier(.17,.73,.5,.92),
+    background .27s cubic-bezier(.17,.73,.5,.92),
+    color .2s;
+  cursor: pointer;
+}
+
+.usercount-container:hover {
+  box-shadow: 0 7px 22px 0 rgba(66, 71, 93, 0.19), 0 1.5px 22px 0 rgba(20, 20, 31, 0.16);
+  background: linear-gradient(120deg, #2e3034 85%, #37393c 100%);
+  color: #b8b8b8;
+  transform: scale(1.04);
+}
+
+.counter {
+  transition: color .25s;
+}
+
+.usercount-container:hover .counter {
+  color: #fcfcfc;
+}
+
     </style>
 </head>
 <body>
